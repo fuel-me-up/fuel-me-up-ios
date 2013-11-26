@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE6FEAC71844D8ED00185E32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6FEAC61844D8ED00185E32 /* Foundation.framework */; };
+		FE6FEAC91844D8ED00185E32 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6FEAC81844D8ED00185E32 /* CoreGraphics.framework */; };
+		FE6FEACB1844D8ED00185E32 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6FEACA1844D8ED00185E32 /* UIKit.framework */; };
+		FE6FEAE61844D8EE00185E32 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6FEAE51844D8EE00185E32 /* XCTest.framework */; };
+		FE6FEAE71844D8EE00185E32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6FEAC61844D8ED00185E32 /* Foundation.framework */; };
+		FE6FEAE81844D8EE00185E32 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6FEACA1844D8ED00185E32 /* UIKit.framework */; };
+		FE6FEB081844D96400185E32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6FEAFE1844D96400185E32 /* main.m */; };
+		FE6FEB091844D96400185E32 /* FMUAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6FEB011844D96400185E32 /* FMUAppDelegate.m */; };
+		FE6FEB0A1844D96400185E32 /* FMUViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6FEB041844D96400185E32 /* FMUViewController.m */; };
+		FE6FEB0B1844D96400185E32 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE6FEB061844D96400185E32 /* Images.xcassets */; };
+		FE6FEB101844DA3D00185E32 /* Fuel Me Up!Tests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE6FEB0D1844DA3D00185E32 /* Fuel Me Up!Tests-Info.plist */; };
+		FE6FEB111844DA3D00185E32 /* Fuel_Me_Up_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6FEB0F1844DA3D00185E32 /* Fuel_Me_Up_Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE6FEAE91844D8EE00185E32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE6FEABB1844D8ED00185E32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE6FEAC21844D8ED00185E32;
+			remoteInfo = "Fuel Me Up!";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FE6FEAC31844D8ED00185E32 /* Fuel Me Up!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fuel Me Up!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE6FEAC61844D8ED00185E32 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FE6FEAC81844D8ED00185E32 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FE6FEACA1844D8ED00185E32 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FE6FEAE41844D8EE00185E32 /* Fuel Me Up!Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fuel Me Up!Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE6FEAE51844D8EE00185E32 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FE6FEAFC1844D96400185E32 /* Fuel Me Up!-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Fuel Me Up!-Info.plist"; sourceTree = "<group>"; };
+		FE6FEAFD1844D96400185E32 /* Fuel Me Up!-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Fuel Me Up!-Prefix.pch"; sourceTree = "<group>"; };
+		FE6FEAFE1844D96400185E32 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FE6FEB001844D96400185E32 /* FMUAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMUAppDelegate.h; sourceTree = "<group>"; };
+		FE6FEB011844D96400185E32 /* FMUAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMUAppDelegate.m; sourceTree = "<group>"; };
+		FE6FEB031844D96400185E32 /* FMUViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMUViewController.h; sourceTree = "<group>"; };
+		FE6FEB041844D96400185E32 /* FMUViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMUViewController.m; sourceTree = "<group>"; };
+		FE6FEB061844D96400185E32 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FE6FEB0D1844DA3D00185E32 /* Fuel Me Up!Tests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Fuel Me Up!Tests-Info.plist"; sourceTree = "<group>"; };
+		FE6FEB0F1844DA3D00185E32 /* Fuel_Me_Up_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fuel_Me_Up_Tests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE6FEAC01844D8ED00185E32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE6FEAC91844D8ED00185E32 /* CoreGraphics.framework in Frameworks */,
+				FE6FEACB1844D8ED00185E32 /* UIKit.framework in Frameworks */,
+				FE6FEAC71844D8ED00185E32 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE6FEAE11844D8EE00185E32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE6FEAE61844D8EE00185E32 /* XCTest.framework in Frameworks */,
+				FE6FEAE81844D8EE00185E32 /* UIKit.framework in Frameworks */,
+				FE6FEAE71844D8EE00185E32 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE6FEABA1844D8ED00185E32 = {
+			isa = PBXGroup;
+			children = (
+				FE6FEACC1844D8ED00185E32 /* Fuel Me Up! */,
+				FE6FEAEB1844D8EE00185E32 /* Fuel Me Up!Tests */,
+				FE6FEAC51844D8ED00185E32 /* Frameworks */,
+				FE6FEAC41844D8ED00185E32 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE6FEAC41844D8ED00185E32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE6FEAC31844D8ED00185E32 /* Fuel Me Up!.app */,
+				FE6FEAE41844D8EE00185E32 /* Fuel Me Up!Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE6FEAC51844D8ED00185E32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE6FEAC61844D8ED00185E32 /* Foundation.framework */,
+				FE6FEAC81844D8ED00185E32 /* CoreGraphics.framework */,
+				FE6FEACA1844D8ED00185E32 /* UIKit.framework */,
+				FE6FEAE51844D8EE00185E32 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE6FEACC1844D8ED00185E32 /* Fuel Me Up! */ = {
+			isa = PBXGroup;
+			children = (
+				FE6FEAFB1844D96400185E32 /* Ancillary files */,
+				FE6FEAFF1844D96400185E32 /* Classes */,
+				FE6FEB051844D96400185E32 /* Resources */,
+			);
+			path = "Fuel Me Up!";
+			sourceTree = "<group>";
+		};
+		FE6FEAEB1844D8EE00185E32 /* Fuel Me Up!Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FE6FEB0C1844DA3D00185E32 /* Ancillary files */,
+				FE6FEB0E1844DA3D00185E32 /* Classes */,
+			);
+			path = "Fuel Me Up!Tests";
+			sourceTree = "<group>";
+		};
+		FE6FEAFB1844D96400185E32 /* Ancillary files */ = {
+			isa = PBXGroup;
+			children = (
+				FE6FEAFC1844D96400185E32 /* Fuel Me Up!-Info.plist */,
+				FE6FEAFD1844D96400185E32 /* Fuel Me Up!-Prefix.pch */,
+				FE6FEAFE1844D96400185E32 /* main.m */,
+			);
+			path = "Ancillary files";
+			sourceTree = "<group>";
+		};
+		FE6FEAFF1844D96400185E32 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FE6FEB001844D96400185E32 /* FMUAppDelegate.h */,
+				FE6FEB011844D96400185E32 /* FMUAppDelegate.m */,
+				FE6FEB021844D96400185E32 /* View controllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FE6FEB021844D96400185E32 /* View controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FE6FEB031844D96400185E32 /* FMUViewController.h */,
+				FE6FEB041844D96400185E32 /* FMUViewController.m */,
+			);
+			path = "View controllers";
+			sourceTree = "<group>";
+		};
+		FE6FEB051844D96400185E32 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FE6FEB061844D96400185E32 /* Images.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FE6FEB0C1844DA3D00185E32 /* Ancillary files */ = {
+			isa = PBXGroup;
+			children = (
+				FE6FEB0D1844DA3D00185E32 /* Fuel Me Up!Tests-Info.plist */,
+			);
+			path = "Ancillary files";
+			sourceTree = "<group>";
+		};
+		FE6FEB0E1844DA3D00185E32 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FE6FEB0F1844DA3D00185E32 /* Fuel_Me_Up_Tests.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE6FEAC21844D8ED00185E32 /* Fuel Me Up! */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE6FEAF51844D8EE00185E32 /* Build configuration list for PBXNativeTarget "Fuel Me Up!" */;
+			buildPhases = (
+				FE6FEABF1844D8ED00185E32 /* Sources */,
+				FE6FEAC01844D8ED00185E32 /* Frameworks */,
+				FE6FEAC11844D8ED00185E32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fuel Me Up!";
+			productName = "Fuel Me Up!";
+			productReference = FE6FEAC31844D8ED00185E32 /* Fuel Me Up!.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE6FEAE31844D8EE00185E32 /* Fuel Me Up!Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE6FEAF81844D8EE00185E32 /* Build configuration list for PBXNativeTarget "Fuel Me Up!Tests" */;
+			buildPhases = (
+				FE6FEAE01844D8EE00185E32 /* Sources */,
+				FE6FEAE11844D8EE00185E32 /* Frameworks */,
+				FE6FEAE21844D8EE00185E32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE6FEAEA1844D8EE00185E32 /* PBXTargetDependency */,
+			);
+			name = "Fuel Me Up!Tests";
+			productName = "Fuel Me Up!Tests";
+			productReference = FE6FEAE41844D8EE00185E32 /* Fuel Me Up!Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE6FEABB1844D8ED00185E32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FMU;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Maurício Hanika";
+				TargetAttributes = {
+					FE6FEAE31844D8EE00185E32 = {
+						TestTargetID = FE6FEAC21844D8ED00185E32;
+					};
+				};
+			};
+			buildConfigurationList = FE6FEABE1844D8ED00185E32 /* Build configuration list for PBXProject "Fuel Me Up!" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE6FEABA1844D8ED00185E32;
+			productRefGroup = FE6FEAC41844D8ED00185E32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE6FEAC21844D8ED00185E32 /* Fuel Me Up! */,
+				FE6FEAE31844D8EE00185E32 /* Fuel Me Up!Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE6FEAC11844D8ED00185E32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE6FEB0B1844D96400185E32 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE6FEAE21844D8EE00185E32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE6FEB101844DA3D00185E32 /* Fuel Me Up!Tests-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE6FEABF1844D8ED00185E32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE6FEB0A1844D96400185E32 /* FMUViewController.m in Sources */,
+				FE6FEB081844D96400185E32 /* main.m in Sources */,
+				FE6FEB091844D96400185E32 /* FMUAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE6FEAE01844D8EE00185E32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE6FEB111844DA3D00185E32 /* Fuel_Me_Up_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE6FEAEA1844D8EE00185E32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE6FEAC21844D8ED00185E32 /* Fuel Me Up! */;
+			targetProxy = FE6FEAE91844D8EE00185E32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FE6FEAF31844D8EE00185E32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FE6FEAF41844D8EE00185E32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE6FEAF61844D8EE00185E32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fuel Me Up!/Ancillary files/Fuel Me Up!-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Fuel Me Up!/Ancillary files/Fuel Me Up!-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FE6FEAF71844D8EE00185E32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fuel Me Up!/Ancillary files/Fuel Me Up!-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Fuel Me Up!/Ancillary files/Fuel Me Up!-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FE6FEAF91844D8EE00185E32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Fuel Me Up!.app/Fuel Me Up!";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fuel Me Up!/Fuel Me Up!-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Fuel Me Up!Tests/Ancillary files/Fuel Me Up!Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FE6FEAFA1844D8EE00185E32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Fuel Me Up!.app/Fuel Me Up!";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fuel Me Up!/Fuel Me Up!-Prefix.pch";
+				INFOPLIST_FILE = "Fuel Me Up!Tests/Ancillary files/Fuel Me Up!Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE6FEABE1844D8ED00185E32 /* Build configuration list for PBXProject "Fuel Me Up!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE6FEAF31844D8EE00185E32 /* Debug */,
+				FE6FEAF41844D8EE00185E32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE6FEAF51844D8EE00185E32 /* Build configuration list for PBXNativeTarget "Fuel Me Up!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE6FEAF61844D8EE00185E32 /* Debug */,
+				FE6FEAF71844D8EE00185E32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE6FEAF81844D8EE00185E32 /* Build configuration list for PBXNativeTarget "Fuel Me Up!Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE6FEAF91844D8EE00185E32 /* Debug */,
+				FE6FEAFA1844D8EE00185E32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE6FEABB1844D8ED00185E32 /* Project object */;
+}
