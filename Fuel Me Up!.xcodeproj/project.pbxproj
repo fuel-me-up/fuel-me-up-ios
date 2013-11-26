@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		19B08E9EBEBD4684BD243E9F /* libPods-Fuel Me Up!Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B22F8E747F264025A04E125B /* libPods-Fuel Me Up!Tests.a */; };
+		3D09B2B7BA89DA9D9DBE18F3 /* FMUVehicleFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D09BC4E715B8829411C65CB /* FMUVehicleFilter.m */; };
+		3D09B41D680CACDBDB285266 /* constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D09B0245F743D486DBCDE40 /* constants.m */; };
+		3D09B58DED571F0CBFC8366C /* FMULocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D09B717C590A2C7CA3B2287 /* FMULocation.m */; };
+		3D09B5D2E9C6A25364A3D923 /* FMURequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D09BDF796A7DCFD470AF9D3 /* FMURequestHandler.m */; };
+		3D09B5E73714686AC1474487 /* FMUFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D09BDFED05C5717D54A0998 /* FMUFilterViewController.m */; };
+		3D09B94276EFDCFDCDB48EA6 /* FMUAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D09BEE211588F6D65A15F2A /* FMUAPIClient.m */; };
+		3D09BCDF51DE37535D9D6139 /* FMUVehicle+FMUMapAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D09BF510E8E12E9DC748162 /* FMUVehicle+FMUMapAdditions.m */; };
+		3D09BE61A84AC09AA8C77F3D /* FMUVehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D09B8D0E33EED1B3B05794E /* FMUVehicle.m */; };
+		3D09BFA991AC0938C32F572B /* FMURequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D09B2F9459068F3FA18F17C /* FMURequestBuilder.m */; };
 		D5F25E405C474B1FA9870D2F /* libPods-Fuel Me Up!.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E3A0BC62B974B8B99F5CA7B /* libPods-Fuel Me Up!.a */; };
 		FE6FEAC71844D8ED00185E32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6FEAC61844D8ED00185E32 /* Foundation.framework */; };
 		FE6FEAC91844D8ED00185E32 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6FEAC81844D8ED00185E32 /* CoreGraphics.framework */; };
@@ -38,6 +47,24 @@
 /* Begin PBXFileReference section */
 		096017CA981F4462A6C80BBE /* Pods-Fuel Me Up!Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuel Me Up!Tests.xcconfig"; path = "Pods/Pods-Fuel Me Up!Tests.xcconfig"; sourceTree = "<group>"; };
 		0E3A0BC62B974B8B99F5CA7B /* libPods-Fuel Me Up!.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fuel Me Up!.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D09B0245F743D486DBCDE40 /* constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = constants.m; sourceTree = "<group>"; };
+		3D09B1578FB06834F3621C9E /* FMUVehicleFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMUVehicleFilter.h; sourceTree = "<group>"; };
+		3D09B189326919CC90BDC51E /* FMURequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMURequestHandler.h; sourceTree = "<group>"; };
+		3D09B2F9459068F3FA18F17C /* FMURequestBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMURequestBuilder.m; sourceTree = "<group>"; };
+		3D09B4DE364252D5EA69C9A7 /* FMUAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMUAPIClient.h; sourceTree = "<group>"; };
+		3D09B5B488261D77C01205F7 /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+		3D09B717C590A2C7CA3B2287 /* FMULocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMULocation.m; sourceTree = "<group>"; };
+		3D09B7CC4B195B24F8347A18 /* FMUVehicle+FMUMapAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMUVehicle+FMUMapAdditions.h"; sourceTree = "<group>"; };
+		3D09B865B893F23CE12B92EA /* FMUFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMUFilterViewController.h; sourceTree = "<group>"; };
+		3D09B8D0E33EED1B3B05794E /* FMUVehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMUVehicle.m; sourceTree = "<group>"; };
+		3D09BA04A5D7FBB567919F44 /* FMULocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMULocation.h; sourceTree = "<group>"; };
+		3D09BC4E715B8829411C65CB /* FMUVehicleFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMUVehicleFilter.m; sourceTree = "<group>"; };
+		3D09BC8CC031DE0AE1E08F21 /* FMUVehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMUVehicle.h; sourceTree = "<group>"; };
+		3D09BDF796A7DCFD470AF9D3 /* FMURequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMURequestHandler.m; sourceTree = "<group>"; };
+		3D09BDFED05C5717D54A0998 /* FMUFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMUFilterViewController.m; sourceTree = "<group>"; };
+		3D09BEA6BEFDD63A86500214 /* FMURequestBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMURequestBuilder.h; sourceTree = "<group>"; };
+		3D09BEE211588F6D65A15F2A /* FMUAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMUAPIClient.m; sourceTree = "<group>"; };
+		3D09BF510E8E12E9DC748162 /* FMUVehicle+FMUMapAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMUVehicle+FMUMapAdditions.m"; sourceTree = "<group>"; };
 		A256763C06DC4ECD93F4FE01 /* Pods-Fuel Me Up!.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuel Me Up!.xcconfig"; path = "Pods/Pods-Fuel Me Up!.xcconfig"; sourceTree = "<group>"; };
 		B22F8E747F264025A04E125B /* libPods-Fuel Me Up!Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fuel Me Up!Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6FEAC31844D8ED00185E32 /* Fuel Me Up!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fuel Me Up!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +115,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D09B55BFDF77FBF15D27159 /* Request handlers */ = {
+			isa = PBXGroup;
+			children = (
+				3D09B189326919CC90BDC51E /* FMURequestHandler.h */,
+				3D09BDF796A7DCFD470AF9D3 /* FMURequestHandler.m */,
+			);
+			path = "Request handlers";
+			sourceTree = "<group>";
+		};
+		3D09B568205EDD1774DC9A44 /* Request builders */ = {
+			isa = PBXGroup;
+			children = (
+				3D09B2F9459068F3FA18F17C /* FMURequestBuilder.m */,
+				3D09BEA6BEFDD63A86500214 /* FMURequestBuilder.h */,
+			);
+			path = "Request builders";
+			sourceTree = "<group>";
+		};
+		3D09BAF2F8BCBE3ECEEB0BAE /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				3D09B55BFDF77FBF15D27159 /* Request handlers */,
+				3D09B568205EDD1774DC9A44 /* Request builders */,
+				3D09BEE211588F6D65A15F2A /* FMUAPIClient.m */,
+				3D09B4DE364252D5EA69C9A7 /* FMUAPIClient.h */,
+			);
+			path = Connection;
+			sourceTree = "<group>";
+		};
+		3D09BFDD2E676BDB0D7A758D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D09B8D0E33EED1B3B05794E /* FMUVehicle.m */,
+				3D09BC8CC031DE0AE1E08F21 /* FMUVehicle.h */,
+				3D09B717C590A2C7CA3B2287 /* FMULocation.m */,
+				3D09BA04A5D7FBB567919F44 /* FMULocation.h */,
+				3D09BF510E8E12E9DC748162 /* FMUVehicle+FMUMapAdditions.m */,
+				3D09B7CC4B195B24F8347A18 /* FMUVehicle+FMUMapAdditions.h */,
+				3D09BC4E715B8829411C65CB /* FMUVehicleFilter.m */,
+				3D09B1578FB06834F3621C9E /* FMUVehicleFilter.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FE6FEABA1844D8ED00185E32 = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +220,8 @@
 				FE6FEAFC1844D96400185E32 /* Fuel Me Up!-Info.plist */,
 				FE6FEAFD1844D96400185E32 /* Fuel Me Up!-Prefix.pch */,
 				FE6FEAFE1844D96400185E32 /* main.m */,
+				3D09B0245F743D486DBCDE40 /* constants.m */,
+				3D09B5B488261D77C01205F7 /* constants.h */,
 			);
 			path = "Ancillary files";
 			sourceTree = "<group>";
@@ -159,6 +232,8 @@
 				FE6FEB001844D96400185E32 /* FMUAppDelegate.h */,
 				FE6FEB011844D96400185E32 /* FMUAppDelegate.m */,
 				FE6FEB021844D96400185E32 /* View controllers */,
+				3D09BAF2F8BCBE3ECEEB0BAE /* Connection */,
+				3D09BFDD2E676BDB0D7A758D /* Model */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -168,6 +243,8 @@
 			children = (
 				FE6FEB031844D96400185E32 /* FMUMapViewController.h */,
 				FE6FEB041844D96400185E32 /* FMUMapViewController.m */,
+				3D09BDFED05C5717D54A0998 /* FMUFilterViewController.m */,
+				3D09B865B893F23CE12B92EA /* FMUFilterViewController.h */,
 			);
 			path = "View controllers";
 			sourceTree = "<group>";
@@ -249,7 +326,7 @@
 				ORGANIZATIONNAME = "Maurício Hanika";
 				TargetAttributes = {
 					FE6FEAE31844D8EE00185E32 = {
-						TestTargetID = FE6FEAC21844D8ED00185E32;
+						TestTargetID = FE6FEAC21844D8ED00185E32 /* Fuel Me Up! */;
 					};
 				};
 			};
@@ -362,6 +439,15 @@
 				FE6FEB0A1844D96400185E32 /* FMUMapViewController.m in Sources */,
 				FE6FEB081844D96400185E32 /* main.m in Sources */,
 				FE6FEB091844D96400185E32 /* FMUAppDelegate.m in Sources */,
+				3D09B5D2E9C6A25364A3D923 /* FMURequestHandler.m in Sources */,
+				3D09BFA991AC0938C32F572B /* FMURequestBuilder.m in Sources */,
+				3D09B94276EFDCFDCDB48EA6 /* FMUAPIClient.m in Sources */,
+				3D09BE61A84AC09AA8C77F3D /* FMUVehicle.m in Sources */,
+				3D09B58DED571F0CBFC8366C /* FMULocation.m in Sources */,
+				3D09BCDF51DE37535D9D6139 /* FMUVehicle+FMUMapAdditions.m in Sources */,
+				3D09B5E73714686AC1474487 /* FMUFilterViewController.m in Sources */,
+				3D09B41D680CACDBDB285266 /* constants.m in Sources */,
+				3D09B2B7BA89DA9D9DBE18F3 /* FMUVehicleFilter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,10 +548,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FMUHTTPBackendURL = "http://fuel-me-up.herokuapp.com/";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Fuel Me Up!/Ancillary files/Fuel Me Up!-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"FMUHTTPBackendURL=\"@\\\"${FMUHTTPBackendURL}\\\"\"",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Fuel Me Up!/Ancillary files/Fuel Me Up!-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -476,10 +569,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FMUHTTPBackendURL = "http://fuel-me-up.herokuapp.com/";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Fuel Me Up!/Ancillary files/Fuel Me Up!-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"FMUHTTPBackendURL=\"@\\\"${FMUHTTPBackendURL}\\\"\"",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Fuel Me Up!/Ancillary files/Fuel Me Up!-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

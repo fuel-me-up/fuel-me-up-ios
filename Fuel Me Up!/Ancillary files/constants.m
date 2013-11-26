@@ -3,8 +3,4 @@
 * Copyright (c) 2013 Maurício Hanika. All rights reserved.
 */
 
-#import <UIKit/UIKit.h>
-
-@interface FMUMapViewController : UIViewController
-
-@end
+#import "constants.h"

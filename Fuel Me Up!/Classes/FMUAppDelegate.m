@@ -8,13 +8,23 @@
 
 #import "FMUAppDelegate.h"
 #import "FMUMapViewController.h"
+#import "AFNetworkActivityIndicatorManager.h"
 
 @implementation FMUAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // Setup networking
+    [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
+
+    // Setup user interface
     self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
-    self.window.rootViewController = [[FMUMapViewController alloc] init];
+
+    FMUMapViewController *mapViewController = [[FMUMapViewController alloc] init];
+
+    UINavigationController *navigationController =
+        [[UINavigationController alloc] initWithRootViewController:mapViewController];
+    self.window.rootViewController = navigationController;
     
     [self.window makeKeyAndVisible];
     return YES;
