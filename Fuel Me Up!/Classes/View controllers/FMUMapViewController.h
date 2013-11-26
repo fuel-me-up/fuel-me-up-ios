@@ -1,17 +1,13 @@
 //
-//  FMUViewController.m
+//  FMUViewController.h
 //  Fuel Me Up!
 //
 //  Created by Maurício Hanika on 26.11.13.
 //  Copyright (c) 2013 Maurício Hanika. All rights reserved.
 //
 
-#import "FMUViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface FMUViewController ()
-
-@end
-
-@implementation FMUViewController
+@interface FMUMapViewController : UIViewController
 
 @end

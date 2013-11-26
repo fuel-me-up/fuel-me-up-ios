@@ -1,1163 +1,564 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>096017CA981F4462A6C80BBE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Fuel Me Up!Tests.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods-Fuel Me Up!Tests.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0E3A0BC62B974B8B99F5CA7B</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-Fuel Me Up!.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>19B08E9EBEBD4684BD243E9F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B22F8E747F264025A04E125B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5770FB46D4C1422EA4B97F44</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-Fuel Me Up!Tests-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>6D9E9B19956544539F558C10</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>7A92EE3E77FD44A6A49BDEA6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>A256763C06DC4ECD93F4FE01</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Fuel Me Up!.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods-Fuel Me Up!.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B22F8E747F264025A04E125B</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-Fuel Me Up!Tests.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>C1958BAFB3374575AEF56F56</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-Fuel Me Up!-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>D5F25E405C474B1FA9870D2F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0E3A0BC62B974B8B99F5CA7B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FE6FEABA1844D8ED00185E32</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FE6FEACC1844D8ED00185E32</string>
-				<string>FE6FEAEB1844D8EE00185E32</string>
-				<string>FE6FEAC51844D8ED00185E32</string>
-				<string>FE6FEAC41844D8ED00185E32</string>
-				<string>A256763C06DC4ECD93F4FE01</string>
-				<string>096017CA981F4462A6C80BBE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FE6FEABB1844D8ED00185E32</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>CLASSPREFIX</key>
-				<string>FMU</string>
-				<key>LastUpgradeCheck</key>
-				<string>0500</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Maur&#237;cio Hanika</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>FE6FEAE31844D8EE00185E32</key>
-					<dict>
-						<key>TestTargetID</key>
-						<string>FE6FEAC21844D8ED00185E32</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>FE6FEABE1844D8ED00185E32</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>FE6FEABA1844D8ED00185E32</string>
-			<key>productRefGroup</key>
-			<string>FE6FEAC41844D8ED00185E32</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>FE6FEAC21844D8ED00185E32</string>
-				<string>FE6FEAE31844D8EE00185E32</string>
-			</array>
-		</dict>
-		<key>FE6FEABE1844D8ED00185E32</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>FE6FEAF31844D8EE00185E32</string>
-				<string>FE6FEAF41844D8EE00185E32</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>FE6FEABF1844D8ED00185E32</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>FE6FEB0A1844D96400185E32</string>
-				<string>FE6FEB081844D96400185E32</string>
-				<string>FE6FEB091844D96400185E32</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>FE6FEAC01844D8ED00185E32</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>FE6FEAC91844D8ED00185E32</string>
-				<string>FE6FEACB1844D8ED00185E32</string>
-				<string>FE6FEAC71844D8ED00185E32</string>
-				<string>D5F25E405C474B1FA9870D2F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>FE6FEAC11844D8ED00185E32</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>FE6FEB0B1844D96400185E32</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>FE6FEAC21844D8ED00185E32</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>FE6FEAF51844D8EE00185E32</string>
-			<key>buildPhases</key>
-			<array>
-				<string>6D9E9B19956544539F558C10</string>
-				<string>FE6FEABF1844D8ED00185E32</string>
-				<string>FE6FEAC01844D8ED00185E32</string>
-				<string>FE6FEAC11844D8ED00185E32</string>
-				<string>C1958BAFB3374575AEF56F56</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Fuel Me Up!</string>
-			<key>productName</key>
-			<string>Fuel Me Up!</string>
-			<key>productReference</key>
-			<string>FE6FEAC31844D8ED00185E32</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>FE6FEAC31844D8ED00185E32</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Fuel Me Up!.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>FE6FEAC41844D8ED00185E32</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FE6FEAC31844D8ED00185E32</string>
-				<string>FE6FEAE41844D8EE00185E32</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FE6FEAC51844D8ED00185E32</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FE6FEAC61844D8ED00185E32</string>
-				<string>FE6FEAC81844D8ED00185E32</string>
-				<string>FE6FEACA1844D8ED00185E32</string>
-				<string>FE6FEAE51844D8EE00185E32</string>
-				<string>0E3A0BC62B974B8B99F5CA7B</string>
-				<string>B22F8E747F264025A04E125B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FE6FEAC61844D8ED00185E32</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>FE6FEAC71844D8ED00185E32</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FE6FEAC61844D8ED00185E32</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FE6FEAC81844D8ED00185E32</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>FE6FEAC91844D8ED00185E32</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FE6FEAC81844D8ED00185E32</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FE6FEACA1844D8ED00185E32</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>FE6FEACB1844D8ED00185E32</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FE6FEACA1844D8ED00185E32</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FE6FEACC1844D8ED00185E32</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FE6FEAFB1844D96400185E32</string>
-				<string>FE6FEAFF1844D96400185E32</string>
-				<string>FE6FEB051844D96400185E32</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Fuel Me Up!</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FE6FEAE01844D8EE00185E32</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>FE6FEB111844DA3D00185E32</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>FE6FEAE11844D8EE00185E32</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>FE6FEAE61844D8EE00185E32</string>
-				<string>FE6FEAE81844D8EE00185E32</string>
-				<string>FE6FEAE71844D8EE00185E32</string>
-				<string>19B08E9EBEBD4684BD243E9F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>FE6FEAE21844D8EE00185E32</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>FE6FEB101844DA3D00185E32</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>FE6FEAE31844D8EE00185E32</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>FE6FEAF81844D8EE00185E32</string>
-			<key>buildPhases</key>
-			<array>
-				<string>7A92EE3E77FD44A6A49BDEA6</string>
-				<string>FE6FEAE01844D8EE00185E32</string>
-				<string>FE6FEAE11844D8EE00185E32</string>
-				<string>FE6FEAE21844D8EE00185E32</string>
-				<string>5770FB46D4C1422EA4B97F44</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>FE6FEAEA1844D8EE00185E32</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Fuel Me Up!Tests</string>
-			<key>productName</key>
-			<string>Fuel Me Up!Tests</string>
-			<key>productReference</key>
-			<string>FE6FEAE41844D8EE00185E32</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>FE6FEAE41844D8EE00185E32</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Fuel Me Up!Tests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>FE6FEAE51844D8EE00185E32</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>XCTest.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/XCTest.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>FE6FEAE61844D8EE00185E32</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FE6FEAE51844D8EE00185E32</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FE6FEAE71844D8EE00185E32</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FE6FEAC61844D8ED00185E32</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FE6FEAE81844D8EE00185E32</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FE6FEACA1844D8ED00185E32</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FE6FEAE91844D8EE00185E32</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>FE6FEABB1844D8ED00185E32</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>FE6FEAC21844D8ED00185E32</string>
-			<key>remoteInfo</key>
-			<string>Fuel Me Up!</string>
-		</dict>
-		<key>FE6FEAEA1844D8EE00185E32</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>FE6FEAC21844D8ED00185E32</string>
-			<key>targetProxy</key>
-			<string>FE6FEAE91844D8EE00185E32</string>
-		</dict>
-		<key>FE6FEAEB1844D8EE00185E32</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FE6FEB0C1844DA3D00185E32</string>
-				<string>FE6FEB0E1844DA3D00185E32</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Fuel Me Up!Tests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FE6FEAF31844D8EE00185E32</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>FE6FEAF41844D8EE00185E32</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>FE6FEAF51844D8EE00185E32</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>FE6FEAF61844D8EE00185E32</string>
-				<string>FE6FEAF71844D8EE00185E32</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>FE6FEAF61844D8EE00185E32</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>A256763C06DC4ECD93F4FE01</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Fuel Me Up!/Ancillary files/Fuel Me Up!-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>$(SRCROOT)/Fuel Me Up!/Ancillary files/Fuel Me Up!-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>FE6FEAF71844D8EE00185E32</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>A256763C06DC4ECD93F4FE01</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Fuel Me Up!/Ancillary files/Fuel Me Up!-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>$(SRCROOT)/Fuel Me Up!/Ancillary files/Fuel Me Up!-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>FE6FEAF81844D8EE00185E32</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>FE6FEAF91844D8EE00185E32</string>
-				<string>FE6FEAFA1844D8EE00185E32</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>FE6FEAF91844D8EE00185E32</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>096017CA981F4462A6C80BBE</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/Fuel Me Up!.app/Fuel Me Up!</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Fuel Me Up!/Fuel Me Up!-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>Fuel Me Up!Tests/Ancillary files/Fuel Me Up!Tests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>FE6FEAFA1844D8EE00185E32</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>096017CA981F4462A6C80BBE</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/Fuel Me Up!.app/Fuel Me Up!</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Fuel Me Up!/Fuel Me Up!-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Fuel Me Up!Tests/Ancillary files/Fuel Me Up!Tests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>FE6FEAFB1844D96400185E32</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FE6FEAFC1844D96400185E32</string>
-				<string>FE6FEAFD1844D96400185E32</string>
-				<string>FE6FEAFE1844D96400185E32</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Ancillary files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FE6FEAFC1844D96400185E32</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Fuel Me Up!-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FE6FEAFD1844D96400185E32</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Fuel Me Up!-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FE6FEAFE1844D96400185E32</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FE6FEAFF1844D96400185E32</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FE6FEB001844D96400185E32</string>
-				<string>FE6FEB011844D96400185E32</string>
-				<string>FE6FEB021844D96400185E32</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Classes</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FE6FEB001844D96400185E32</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>FMUAppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FE6FEB011844D96400185E32</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>FMUAppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FE6FEB021844D96400185E32</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FE6FEB031844D96400185E32</string>
-				<string>FE6FEB041844D96400185E32</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>View controllers</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FE6FEB031844D96400185E32</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>FMUViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FE6FEB041844D96400185E32</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>FMUViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FE6FEB051844D96400185E32</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FE6FEB061844D96400185E32</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Resources</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FE6FEB061844D96400185E32</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FE6FEB081844D96400185E32</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FE6FEAFE1844D96400185E32</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FE6FEB091844D96400185E32</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FE6FEB011844D96400185E32</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FE6FEB0A1844D96400185E32</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FE6FEB041844D96400185E32</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FE6FEB0B1844D96400185E32</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FE6FEB061844D96400185E32</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FE6FEB0C1844DA3D00185E32</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FE6FEB0D1844DA3D00185E32</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Ancillary files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FE6FEB0D1844DA3D00185E32</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Fuel Me Up!Tests-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FE6FEB0E1844DA3D00185E32</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FE6FEB0F1844DA3D00185E32</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Classes</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FE6FEB0F1844DA3D00185E32</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Fuel_Me_Up_Tests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FE6FEB101844DA3D00185E32</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FE6FEB0D1844DA3D00185E32</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FE6FEB111844DA3D00185E32</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FE6FEB0F1844DA3D00185E32</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>FE6FEABB1844D8ED00185E32</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19B08E9EBEBD4684BD243E9F /* libPods-Fuel Me Up!Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B22F8E747F264025A04E125B /* libPods-Fuel Me Up!Tests.a */; };
+		D5F25E405C474B1FA9870D2F /* libPods-Fuel Me Up!.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E3A0BC62B974B8B99F5CA7B /* libPods-Fuel Me Up!.a */; };
+		FE6FEAC71844D8ED00185E32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6FEAC61844D8ED00185E32 /* Foundation.framework */; };
+		FE6FEAC91844D8ED00185E32 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6FEAC81844D8ED00185E32 /* CoreGraphics.framework */; };
+		FE6FEACB1844D8ED00185E32 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6FEACA1844D8ED00185E32 /* UIKit.framework */; };
+		FE6FEAE61844D8EE00185E32 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6FEAE51844D8EE00185E32 /* XCTest.framework */; };
+		FE6FEAE71844D8EE00185E32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6FEAC61844D8ED00185E32 /* Foundation.framework */; };
+		FE6FEAE81844D8EE00185E32 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6FEACA1844D8ED00185E32 /* UIKit.framework */; };
+		FE6FEB081844D96400185E32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6FEAFE1844D96400185E32 /* main.m */; };
+		FE6FEB091844D96400185E32 /* FMUAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6FEB011844D96400185E32 /* FMUAppDelegate.m */; };
+		FE6FEB0A1844D96400185E32 /* FMUMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6FEB041844D96400185E32 /* FMUMapViewController.m */; };
+		FE6FEB0B1844D96400185E32 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE6FEB061844D96400185E32 /* Images.xcassets */; };
+		FE6FEB101844DA3D00185E32 /* Fuel Me Up!Tests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE6FEB0D1844DA3D00185E32 /* Fuel Me Up!Tests-Info.plist */; };
+		FE6FEB111844DA3D00185E32 /* Fuel_Me_Up_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6FEB0F1844DA3D00185E32 /* Fuel_Me_Up_Tests.m */; };
+		FE6FEB131844FAEB00185E32 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6FEB121844FAEB00185E32 /* MapKit.framework */; };
+		FE6FEB151844FAF500185E32 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6FEB141844FAF500185E32 /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE6FEAE91844D8EE00185E32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE6FEABB1844D8ED00185E32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE6FEAC21844D8ED00185E32;
+			remoteInfo = "Fuel Me Up!";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		096017CA981F4462A6C80BBE /* Pods-Fuel Me Up!Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuel Me Up!Tests.xcconfig"; path = "Pods/Pods-Fuel Me Up!Tests.xcconfig"; sourceTree = "<group>"; };
+		0E3A0BC62B974B8B99F5CA7B /* libPods-Fuel Me Up!.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fuel Me Up!.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A256763C06DC4ECD93F4FE01 /* Pods-Fuel Me Up!.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuel Me Up!.xcconfig"; path = "Pods/Pods-Fuel Me Up!.xcconfig"; sourceTree = "<group>"; };
+		B22F8E747F264025A04E125B /* libPods-Fuel Me Up!Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fuel Me Up!Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE6FEAC31844D8ED00185E32 /* Fuel Me Up!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fuel Me Up!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE6FEAC61844D8ED00185E32 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FE6FEAC81844D8ED00185E32 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FE6FEACA1844D8ED00185E32 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FE6FEAE41844D8EE00185E32 /* Fuel Me Up!Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fuel Me Up!Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE6FEAE51844D8EE00185E32 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FE6FEAFC1844D96400185E32 /* Fuel Me Up!-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Fuel Me Up!-Info.plist"; sourceTree = "<group>"; };
+		FE6FEAFD1844D96400185E32 /* Fuel Me Up!-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Fuel Me Up!-Prefix.pch"; sourceTree = "<group>"; };
+		FE6FEAFE1844D96400185E32 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FE6FEB001844D96400185E32 /* FMUAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMUAppDelegate.h; sourceTree = "<group>"; };
+		FE6FEB011844D96400185E32 /* FMUAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMUAppDelegate.m; sourceTree = "<group>"; };
+		FE6FEB031844D96400185E32 /* FMUMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMUMapViewController.h; sourceTree = "<group>"; };
+		FE6FEB041844D96400185E32 /* FMUMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMUMapViewController.m; sourceTree = "<group>"; };
+		FE6FEB061844D96400185E32 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FE6FEB0D1844DA3D00185E32 /* Fuel Me Up!Tests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Fuel Me Up!Tests-Info.plist"; sourceTree = "<group>"; };
+		FE6FEB0F1844DA3D00185E32 /* Fuel_Me_Up_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fuel_Me_Up_Tests.m; sourceTree = "<group>"; };
+		FE6FEB121844FAEB00185E32 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FE6FEB141844FAF500185E32 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE6FEAC01844D8ED00185E32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE6FEB151844FAF500185E32 /* CoreLocation.framework in Frameworks */,
+				FE6FEB131844FAEB00185E32 /* MapKit.framework in Frameworks */,
+				FE6FEAC91844D8ED00185E32 /* CoreGraphics.framework in Frameworks */,
+				FE6FEACB1844D8ED00185E32 /* UIKit.framework in Frameworks */,
+				FE6FEAC71844D8ED00185E32 /* Foundation.framework in Frameworks */,
+				D5F25E405C474B1FA9870D2F /* libPods-Fuel Me Up!.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE6FEAE11844D8EE00185E32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE6FEAE61844D8EE00185E32 /* XCTest.framework in Frameworks */,
+				FE6FEAE81844D8EE00185E32 /* UIKit.framework in Frameworks */,
+				FE6FEAE71844D8EE00185E32 /* Foundation.framework in Frameworks */,
+				19B08E9EBEBD4684BD243E9F /* libPods-Fuel Me Up!Tests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE6FEABA1844D8ED00185E32 = {
+			isa = PBXGroup;
+			children = (
+				FE6FEACC1844D8ED00185E32 /* Fuel Me Up! */,
+				FE6FEAEB1844D8EE00185E32 /* Fuel Me Up!Tests */,
+				FE6FEAC51844D8ED00185E32 /* Frameworks */,
+				FE6FEAC41844D8ED00185E32 /* Products */,
+				A256763C06DC4ECD93F4FE01 /* Pods-Fuel Me Up!.xcconfig */,
+				096017CA981F4462A6C80BBE /* Pods-Fuel Me Up!Tests.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		FE6FEAC41844D8ED00185E32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE6FEAC31844D8ED00185E32 /* Fuel Me Up!.app */,
+				FE6FEAE41844D8EE00185E32 /* Fuel Me Up!Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE6FEAC51844D8ED00185E32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE6FEB141844FAF500185E32 /* CoreLocation.framework */,
+				FE6FEB121844FAEB00185E32 /* MapKit.framework */,
+				FE6FEAC61844D8ED00185E32 /* Foundation.framework */,
+				FE6FEAC81844D8ED00185E32 /* CoreGraphics.framework */,
+				FE6FEACA1844D8ED00185E32 /* UIKit.framework */,
+				FE6FEAE51844D8EE00185E32 /* XCTest.framework */,
+				0E3A0BC62B974B8B99F5CA7B /* libPods-Fuel Me Up!.a */,
+				B22F8E747F264025A04E125B /* libPods-Fuel Me Up!Tests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE6FEACC1844D8ED00185E32 /* Fuel Me Up! */ = {
+			isa = PBXGroup;
+			children = (
+				FE6FEAFB1844D96400185E32 /* Ancillary files */,
+				FE6FEAFF1844D96400185E32 /* Classes */,
+				FE6FEB051844D96400185E32 /* Resources */,
+			);
+			path = "Fuel Me Up!";
+			sourceTree = "<group>";
+		};
+		FE6FEAEB1844D8EE00185E32 /* Fuel Me Up!Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FE6FEB0C1844DA3D00185E32 /* Ancillary files */,
+				FE6FEB0E1844DA3D00185E32 /* Classes */,
+			);
+			path = "Fuel Me Up!Tests";
+			sourceTree = "<group>";
+		};
+		FE6FEAFB1844D96400185E32 /* Ancillary files */ = {
+			isa = PBXGroup;
+			children = (
+				FE6FEAFC1844D96400185E32 /* Fuel Me Up!-Info.plist */,
+				FE6FEAFD1844D96400185E32 /* Fuel Me Up!-Prefix.pch */,
+				FE6FEAFE1844D96400185E32 /* main.m */,
+			);
+			path = "Ancillary files";
+			sourceTree = "<group>";
+		};
+		FE6FEAFF1844D96400185E32 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FE6FEB001844D96400185E32 /* FMUAppDelegate.h */,
+				FE6FEB011844D96400185E32 /* FMUAppDelegate.m */,
+				FE6FEB021844D96400185E32 /* View controllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FE6FEB021844D96400185E32 /* View controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FE6FEB031844D96400185E32 /* FMUMapViewController.h */,
+				FE6FEB041844D96400185E32 /* FMUMapViewController.m */,
+			);
+			path = "View controllers";
+			sourceTree = "<group>";
+		};
+		FE6FEB051844D96400185E32 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FE6FEB061844D96400185E32 /* Images.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FE6FEB0C1844DA3D00185E32 /* Ancillary files */ = {
+			isa = PBXGroup;
+			children = (
+				FE6FEB0D1844DA3D00185E32 /* Fuel Me Up!Tests-Info.plist */,
+			);
+			path = "Ancillary files";
+			sourceTree = "<group>";
+		};
+		FE6FEB0E1844DA3D00185E32 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FE6FEB0F1844DA3D00185E32 /* Fuel_Me_Up_Tests.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE6FEAC21844D8ED00185E32 /* Fuel Me Up! */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE6FEAF51844D8EE00185E32 /* Build configuration list for PBXNativeTarget "Fuel Me Up!" */;
+			buildPhases = (
+				6D9E9B19956544539F558C10 /* Check Pods Manifest.lock */,
+				FE6FEABF1844D8ED00185E32 /* Sources */,
+				FE6FEAC01844D8ED00185E32 /* Frameworks */,
+				FE6FEAC11844D8ED00185E32 /* Resources */,
+				C1958BAFB3374575AEF56F56 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fuel Me Up!";
+			productName = "Fuel Me Up!";
+			productReference = FE6FEAC31844D8ED00185E32 /* Fuel Me Up!.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE6FEAE31844D8EE00185E32 /* Fuel Me Up!Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE6FEAF81844D8EE00185E32 /* Build configuration list for PBXNativeTarget "Fuel Me Up!Tests" */;
+			buildPhases = (
+				7A92EE3E77FD44A6A49BDEA6 /* Check Pods Manifest.lock */,
+				FE6FEAE01844D8EE00185E32 /* Sources */,
+				FE6FEAE11844D8EE00185E32 /* Frameworks */,
+				FE6FEAE21844D8EE00185E32 /* Resources */,
+				5770FB46D4C1422EA4B97F44 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE6FEAEA1844D8EE00185E32 /* PBXTargetDependency */,
+			);
+			name = "Fuel Me Up!Tests";
+			productName = "Fuel Me Up!Tests";
+			productReference = FE6FEAE41844D8EE00185E32 /* Fuel Me Up!Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE6FEABB1844D8ED00185E32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FMU;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Maurício Hanika";
+				TargetAttributes = {
+					FE6FEAE31844D8EE00185E32 = {
+						TestTargetID = FE6FEAC21844D8ED00185E32;
+					};
+				};
+			};
+			buildConfigurationList = FE6FEABE1844D8ED00185E32 /* Build configuration list for PBXProject "Fuel Me Up!" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE6FEABA1844D8ED00185E32;
+			productRefGroup = FE6FEAC41844D8ED00185E32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE6FEAC21844D8ED00185E32 /* Fuel Me Up! */,
+				FE6FEAE31844D8EE00185E32 /* Fuel Me Up!Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE6FEAC11844D8ED00185E32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE6FEB0B1844D96400185E32 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE6FEAE21844D8EE00185E32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE6FEB101844DA3D00185E32 /* Fuel Me Up!Tests-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5770FB46D4C1422EA4B97F44 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-Fuel Me Up!Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D9E9B19956544539F558C10 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7A92EE3E77FD44A6A49BDEA6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C1958BAFB3374575AEF56F56 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-Fuel Me Up!-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE6FEABF1844D8ED00185E32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE6FEB0A1844D96400185E32 /* FMUMapViewController.m in Sources */,
+				FE6FEB081844D96400185E32 /* main.m in Sources */,
+				FE6FEB091844D96400185E32 /* FMUAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE6FEAE01844D8EE00185E32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE6FEB111844DA3D00185E32 /* Fuel_Me_Up_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE6FEAEA1844D8EE00185E32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE6FEAC21844D8ED00185E32 /* Fuel Me Up! */;
+			targetProxy = FE6FEAE91844D8EE00185E32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FE6FEAF31844D8EE00185E32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FE6FEAF41844D8EE00185E32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE6FEAF61844D8EE00185E32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A256763C06DC4ECD93F4FE01 /* Pods-Fuel Me Up!.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fuel Me Up!/Ancillary files/Fuel Me Up!-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Fuel Me Up!/Ancillary files/Fuel Me Up!-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FE6FEAF71844D8EE00185E32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A256763C06DC4ECD93F4FE01 /* Pods-Fuel Me Up!.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fuel Me Up!/Ancillary files/Fuel Me Up!-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Fuel Me Up!/Ancillary files/Fuel Me Up!-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FE6FEAF91844D8EE00185E32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 096017CA981F4462A6C80BBE /* Pods-Fuel Me Up!Tests.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Fuel Me Up!.app/Fuel Me Up!";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fuel Me Up!/Fuel Me Up!-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Fuel Me Up!Tests/Ancillary files/Fuel Me Up!Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FE6FEAFA1844D8EE00185E32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 096017CA981F4462A6C80BBE /* Pods-Fuel Me Up!Tests.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Fuel Me Up!.app/Fuel Me Up!";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fuel Me Up!/Fuel Me Up!-Prefix.pch";
+				INFOPLIST_FILE = "Fuel Me Up!Tests/Ancillary files/Fuel Me Up!Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE6FEABE1844D8ED00185E32 /* Build configuration list for PBXProject "Fuel Me Up!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE6FEAF31844D8EE00185E32 /* Debug */,
+				FE6FEAF41844D8EE00185E32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE6FEAF51844D8EE00185E32 /* Build configuration list for PBXNativeTarget "Fuel Me Up!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE6FEAF61844D8EE00185E32 /* Debug */,
+				FE6FEAF71844D8EE00185E32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE6FEAF81844D8EE00185E32 /* Build configuration list for PBXNativeTarget "Fuel Me Up!Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE6FEAF91844D8EE00185E32 /* Debug */,
+				FE6FEAFA1844D8EE00185E32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE6FEABB1844D8ED00185E32 /* Project object */;
+}
