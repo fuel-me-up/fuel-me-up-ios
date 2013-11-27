@@ -4,8 +4,10 @@
 */
 
 #import <Foundation/Foundation.h>
+#import "MTLModel.h"
+#import "MTLJSONAdapter.h"
 
-@interface FMUVehicleFilter : NSObject
+@interface FMUVehicleFilter : MTLModel <MTLJSONSerializing>
 
 @property(nonatomic, assign) NSUInteger maximumFuelLevel;
 @property(nonatomic, copy) NSString *city;

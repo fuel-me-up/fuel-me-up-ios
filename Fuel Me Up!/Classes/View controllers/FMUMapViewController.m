@@ -13,6 +13,7 @@
 #import "FMUFilterViewController.h"
 #import "FMUVehicleFilter.h"
 #import "FMUVehicle.h"
+#import "FMUVehicleFilter+FMUPersistence.h"
 
 ////////////////////////////////////////////////////////////////////////////////
 @interface FMUMapViewController () <FMUFilterViewControllerDelegate, MKMapViewDelegate>
@@ -33,9 +34,7 @@
 
     if ( self )
     {
-        _vehicleFilter = [[FMUVehicleFilter alloc] init];
-        _vehicleFilter.maximumFuelLevel = 25;
-        _vehicleFilter.city = @"hamburg";
+        _vehicleFilter = [FMUVehicleFilter defaultFilter];
 
         self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]
             initWithTitle:@"Filter"

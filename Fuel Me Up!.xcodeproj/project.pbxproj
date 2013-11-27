@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		19B08E9EBEBD4684BD243E9F /* libPods-Fuel Me Up!Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B22F8E747F264025A04E125B /* libPods-Fuel Me Up!Tests.a */; };
 		3D09B2B7BA89DA9D9DBE18F3 /* FMUVehicleFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D09BC4E715B8829411C65CB /* FMUVehicleFilter.m */; };
+		3D09B2D440361A599359A262 /* FMUVehicleFilter+FMUPersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D09B86D496E33761DB154D4 /* FMUVehicleFilter+FMUPersistence.m */; };
 		3D09B41D680CACDBDB285266 /* constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D09B0245F743D486DBCDE40 /* constants.m */; };
 		3D09B58DED571F0CBFC8366C /* FMULocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D09B717C590A2C7CA3B2287 /* FMULocation.m */; };
 		3D09B5D2E9C6A25364A3D923 /* FMURequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D09BDF796A7DCFD470AF9D3 /* FMURequestHandler.m */; };
@@ -51,11 +52,13 @@
 		3D09B1578FB06834F3621C9E /* FMUVehicleFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMUVehicleFilter.h; sourceTree = "<group>"; };
 		3D09B189326919CC90BDC51E /* FMURequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMURequestHandler.h; sourceTree = "<group>"; };
 		3D09B2F9459068F3FA18F17C /* FMURequestBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMURequestBuilder.m; sourceTree = "<group>"; };
+		3D09B4330F5761458E14E17C /* FMUVehicleFilter+FMUPersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMUVehicleFilter+FMUPersistence.h"; sourceTree = "<group>"; };
 		3D09B4DE364252D5EA69C9A7 /* FMUAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMUAPIClient.h; sourceTree = "<group>"; };
 		3D09B5B488261D77C01205F7 /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
 		3D09B717C590A2C7CA3B2287 /* FMULocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMULocation.m; sourceTree = "<group>"; };
 		3D09B7CC4B195B24F8347A18 /* FMUVehicle+FMUMapAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMUVehicle+FMUMapAdditions.h"; sourceTree = "<group>"; };
 		3D09B865B893F23CE12B92EA /* FMUFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMUFilterViewController.h; sourceTree = "<group>"; };
+		3D09B86D496E33761DB154D4 /* FMUVehicleFilter+FMUPersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMUVehicleFilter+FMUPersistence.m"; sourceTree = "<group>"; };
 		3D09B8D0E33EED1B3B05794E /* FMUVehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMUVehicle.m; sourceTree = "<group>"; };
 		3D09BA04A5D7FBB567919F44 /* FMULocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMULocation.h; sourceTree = "<group>"; };
 		3D09BC4E715B8829411C65CB /* FMUVehicleFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMUVehicleFilter.m; sourceTree = "<group>"; };
@@ -155,6 +158,8 @@
 				3D09B7CC4B195B24F8347A18 /* FMUVehicle+FMUMapAdditions.h */,
 				3D09BC4E715B8829411C65CB /* FMUVehicleFilter.m */,
 				3D09B1578FB06834F3621C9E /* FMUVehicleFilter.h */,
+				3D09B86D496E33761DB154D4 /* FMUVehicleFilter+FMUPersistence.m */,
+				3D09B4330F5761458E14E17C /* FMUVehicleFilter+FMUPersistence.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -448,6 +453,7 @@
 				3D09B5E73714686AC1474487 /* FMUFilterViewController.m in Sources */,
 				3D09B41D680CACDBDB285266 /* constants.m in Sources */,
 				3D09B2B7BA89DA9D9DBE18F3 /* FMUVehicleFilter.m in Sources */,
+				3D09B2D440361A599359A262 /* FMUVehicleFilter+FMUPersistence.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

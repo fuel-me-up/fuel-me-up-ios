@@ -13,8 +13,11 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 @implementation FMUVehicleFilter
-{
 
++ (NSDictionary *)JSONKeyPathsByPropertyKey
+{
+    return nil;
 }
+
 
 @end

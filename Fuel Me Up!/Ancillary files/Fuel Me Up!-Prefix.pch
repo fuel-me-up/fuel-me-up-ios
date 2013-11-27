@@ -16,3 +16,7 @@
 #endif
 
 #import "constants.h"
+#import "DDLog.h"
+#import "DDTTYLogger.h"
+
+static const int ddLogLevel = LOG_LEVEL_VERBOSE;
