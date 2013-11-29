@@ -11,4 +11,7 @@
       maximumFuelLevel:(NSUInteger)maximumFuelLevel
             completion:(void (^)(NSArray *vehicles, NSError *error))completion;
 
+- (void)gasStationsInCity:(NSString *)city
+                 provider:(NSArray *)provider
+               completion:(void (^)(NSArray *gasStations, NSError *error))completion;
 @end

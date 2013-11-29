@@ -1,22 +1,23 @@
 /**
-* Created by Maurício Hanika on 26.11.13.
+* Created by Matthias Steeger on 28.11.13.
 * Copyright (c) 2013 Maurício Hanika. All rights reserved.
 */
 
-#import "FMUVehicle+FMUMapAdditions.h"
+#import "MTLModel.h"
+#import "FMUGasStation+FMUMapAdditions.h"
 #import "FMULocation.h"
 
 ////////////////////////////////////////////////////////////////////////////////
-@implementation FMUVehicle (FMUMapAdditions)
+@implementation FMUGasStation (FMUMapAdditions)
 
 - (NSString *)title
 {
-    return self.vin;
+    return self.name;
 }
 
 - (NSString *)subtitle
 {
-    return [NSString stringWithFormat:@"%d%% fuel, %@", self.fuelLevel, self.provider];
+    return _availableProviderString;
 }
 
 - (CLLocationCoordinate2D)coordinate

@@ -6,12 +6,12 @@
 #import <Foundation/Foundation.h>
 
 @class FMUFilterViewController;
-@class FMUVehicleFilter;
+@class FMUMapFilter;
 
 ////////////////////////////////////////////////////////////////////////////////
 @protocol FMUFilterViewControllerDelegate <NSObject>
 
-- (void)filterViewController:(FMUFilterViewController *)controller didUpdateFilters:(FMUVehicleFilter *)filter;
+- (void)filterViewController:(FMUFilterViewController *)controller didUpdateFilters:(FMUMapFilter *)filter;
 
 @end
 
@@ -21,5 +21,5 @@
 
 @property(nonatomic, weak) id <FMUFilterViewControllerDelegate> delegate;
 
-- (id)initWithVehicleFilter:(FMUVehicleFilter *)vehicleFilter;
+- (id)initWithMapFilter:(FMUMapFilter *)mapFilter;
 @end

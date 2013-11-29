@@ -3,20 +3,26 @@
 * Copyright (c) 2013 Maurício Hanika. All rights reserved.
 */
 
-#import "FMUVehicleFilter.h"
+#import <Mantle/NSValueTransformer+MTLPredefinedTransformerAdditions.h>
+#import "FMUMapFilter.h"
 
 ////////////////////////////////////////////////////////////////////////////////
-@interface FMUVehicleFilter ()
+@interface FMUMapFilter ()
 
 @end
 
 
 ////////////////////////////////////////////////////////////////////////////////
-@implementation FMUVehicleFilter
+@implementation FMUMapFilter
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey
 {
     return nil;
+}
+
++ (NSValueTransformer *)providerForGasStationTransformer
+{
+    return [NSValueTransformer mtl_JSONArrayTransformerWithModelClass:[NSString class]];
 }
 
 

@@ -4,11 +4,11 @@
 */
 
 #import <Foundation/Foundation.h>
-#import "FMUVehicleFilter.h"
+#import "FMUMapFilter.h"
 
-extern NSString * const FMUCurrentVehicleFilterKey;
+extern NSString * const FMUCurrentMapFilterKey;
 
-@interface FMUVehicleFilter (FMUPersistence)
+@interface FMUMapFilter (FMUPersistence)
 
 + (instancetype)defaultFilter;
 + (void)persistDefaultFilter;

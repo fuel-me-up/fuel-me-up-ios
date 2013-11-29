@@ -10,6 +10,7 @@
 #import "MTLValueTransformer.h"
 #import "NSValueTransformer+MTLPredefinedTransformerAdditions.h"
 #import "FMUVehicle.h"
+#import "FMUGasStation.h"
 
 ////////////////////////////////////////////////////////////////////////////////
 @interface FMURequestBuilder ()
@@ -51,6 +52,33 @@
                                [[MTLValueTransformer mtl_JSONArrayTransformerWithModelClass:[FMUVehicle class]]
                                    transformedValue:responseObject];
                            completion(vehicles, nil);
+                       }
+                   }
+                   failure:^(NSURLSessionDataTask *task, NSError *error)
+                   {
+                       if ( completion )
+                       {
+                           completion(nil, error);
+                       }
+                   }];
+}
+
+- (NSURLSessionDataTask *)gasStationsInCity:(NSString *)city
+                                   provider:(NSArray *)provider
+                                 completion:(void (^)(NSArray *, NSError *))completion
+{
+    NSParameterAssert(completion);
+
+    return [_APIClient GET:[NSString stringWithFormat:@"gasstations/%@", city]
+                parameters:@{@"provider" : provider}
+                   success:^(NSURLSessionDataTask *task, id responseObject)
+                   {
+                       if ( completion )
+                       {
+                           NSArray *gasStations =
+                               [[MTLValueTransformer mtl_JSONArrayTransformerWithModelClass:[FMUGasStation class]]
+                                   transformedValue:responseObject];
+                           completion(gasStations, nil);
                        }
                    }
                    failure:^(NSURLSessionDataTask *task, NSError *error)

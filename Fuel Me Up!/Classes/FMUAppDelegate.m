@@ -9,8 +9,8 @@
 #import "FMUAppDelegate.h"
 #import "FMUMapViewController.h"
 #import "AFNetworkActivityIndicatorManager.h"
-#import "FMUVehicleFilter.h"
-#import "FMUVehicleFilter+FMUPersistence.h"
+#import "FMUMapFilter.h"
+#import "FMUMapFilter+FMUPersistence.h"
 
 @implementation FMUAppDelegate
 
@@ -37,7 +37,7 @@
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
-    [FMUVehicleFilter persistDefaultFilter];
+    [FMUMapFilter persistDefaultFilter];
 }
 
 

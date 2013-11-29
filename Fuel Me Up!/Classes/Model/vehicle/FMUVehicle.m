@@ -3,7 +3,6 @@
 * Copyright (c) 2013 Maurício Hanika. All rights reserved.
 */
 
-#import <MapKit/MapKit.h>
 #import "FMUVehicle.h"
 #import "MTLValueTransformer.h"
 #import "NSValueTransformer+MTLPredefinedTransformerAdditions.h"
@@ -23,7 +22,8 @@
     return @{
         @"date" : @"timestamp",
         @"fuelLevel" : @"fuel_level",
-        @"location" : @"coordinate"
+        @"location" : @"coordinate",
+        @"licensePlate" : @"license_plate"
     };
 }
 

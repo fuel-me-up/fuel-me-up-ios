@@ -3,38 +3,39 @@
 * Copyright (c) 2013 Maurício Hanika. All rights reserved.
 */
 
-#import "FMUVehicleFilter+FMUPersistence.h"
-#import "MTLJSONAdapter.h"
+#import "FMUMapFilter+FMUPersistence.h"
 
-NSString *const FMUCurrentVehicleFilterKey = @"FMUCurrentVehicleFilterKey";
+NSString *const FMUCurrentMapFilterKey = @"FMUCurrentMapFilterKey";
 
 ////////////////////////////////////////////////////////////////////////////////
-@implementation FMUVehicleFilter (FMUPersistence)
+@implementation FMUMapFilter (FMUPersistence)
 
 + (instancetype)defaultFilter
 {
-    static FMUVehicleFilter *instance = nil;
+    static FMUMapFilter *instance = nil;
     static dispatch_once_t onceToken;
 
     dispatch_once(&onceToken, ^
     {
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        if ( [defaults objectForKey:FMUCurrentVehicleFilterKey] == nil )
+        if ( [defaults objectForKey:FMUCurrentMapFilterKey] == nil )
         {
-            instance = [[FMUVehicleFilter alloc] init];
+            instance = [[FMUMapFilter alloc] init];
             instance.maximumFuelLevel = 25;
             instance.city = @"hamburg";
+            instance.gasStationsEnabled = YES;
+            instance.providerForGasStation = @[@"car2go",@"drive-now"];
 
             NSDictionary *dictionary = [MTLJSONAdapter JSONDictionaryFromModel:instance];
-            [defaults setObject:dictionary forKey:FMUCurrentVehicleFilterKey];
+            [defaults setObject:dictionary forKey:FMUCurrentMapFilterKey];
             [defaults synchronize];
         }
         else
         {
-            NSDictionary *dictionary = [defaults objectForKey:FMUCurrentVehicleFilterKey];
+            NSDictionary *dictionary = [defaults objectForKey:FMUCurrentMapFilterKey];
 
             NSError *error = nil;
-            instance = [[FMUVehicleFilter alloc] initWithDictionary:dictionary error:&error];
+            instance = [[FMUMapFilter alloc] initWithDictionary:dictionary error:&error];
 
             if ( instance == nil )
             {
@@ -50,7 +51,7 @@ NSString *const FMUCurrentVehicleFilterKey = @"FMUCurrentVehicleFilterKey";
 {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSDictionary *dictionary = [MTLJSONAdapter JSONDictionaryFromModel:[[self class] defaultFilter]];
-    [defaults setObject:dictionary forKey:FMUCurrentVehicleFilterKey];
+    [defaults setObject:dictionary forKey:FMUCurrentMapFilterKey];
     [defaults synchronize];
 }
 

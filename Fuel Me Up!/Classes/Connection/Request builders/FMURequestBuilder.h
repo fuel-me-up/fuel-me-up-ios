@@ -12,4 +12,8 @@
 - (NSURLSessionDataTask *)vehiclesInCity:(NSString *)city
                           maximumFuelLevel:(NSUInteger)maximumFuelLevel
                                 completion:(void (^)(NSArray *, NSError *))completion;
+
+- (NSURLSessionDataTask *)gasStationsInCity:(NSString *)city
+                                   provider:(NSArray *)provider
+                                 completion:(void (^)(NSArray *, NSError *))completion;
 @end
