@@ -15,6 +15,7 @@
 #import "FMUVehicle.h"
 #import "FMUMapFilter+FMUPersistence.h"
 #import "FMUGasStation.h"
+#import "FMUGasStation+FMUMapAdditions.h"
 #import "FMULocation.h"
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -173,25 +174,20 @@ calloutAccessoryControlTapped:(UIControl *)control
 {
     if ( [view.annotation isKindOfClass:[FMUGasStation class]] )
     {
-        FMUGasStation *gastStation = (FMUGasStation *)view.annotation;
+        FMUGasStation *gasstation = ( FMUGasStation * ) view.annotation;
 
-        MKPlacemark *startPlace = [[MKPlacemark alloc]
-            initWithCoordinate:CLLocationCoordinate2DMake(gastStation.location.latitude, gastStation.location.longitude)
-             addressDictionary:nil];
+        MKPlacemark *startPlace = [[MKPlacemark alloc] initWithCoordinate:gasstation.coordinate addressDictionary:nil];
         MKMapItem *start = [[MKMapItem alloc] initWithPlacemark:startPlace];
-        start.name = gastStation.name;
+        start.name = gasstation.name;
 
-        NSArray *items = [[NSArray alloc] initWithObjects:start, nil];
+        NSArray *items = @[start];
 
-
-        NSDictionary *options = [[NSDictionary alloc] initWithObjectsAndKeys:
-                                                          MKLaunchOptionsDirectionsModeDriving,
-                                                      MKLaunchOptionsDirectionsModeKey, nil];
-        [MKMapItem openMapsWithItems:items launchOptions:options];
+        [MKMapItem openMapsWithItems:items
+                       launchOptions:@{MKLaunchOptionsDirectionsModeDriving : MKLaunchOptionsDirectionsModeKey}];
     }
     else if ( [view.annotation isKindOfClass:[FMUVehicle class]] )
     {
-        FMUVehicle *vehicle = (FMUVehicle *)view.annotation;
+        FMUVehicle *vehicle = ( FMUVehicle * ) view.annotation;
         if ( [vehicle.provider isEqualToString:@"car2go"] )
         {
             NSURL *url = [NSURL URLWithString:@"//car2go:"];

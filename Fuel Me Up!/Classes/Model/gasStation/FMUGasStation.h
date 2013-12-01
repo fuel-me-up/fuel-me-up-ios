@@ -15,6 +15,6 @@
 
 @property(nonatomic, copy) NSString *name;
 @property(nonatomic, strong) FMULocation *location;
-@property(nonatomic, strong) NSArray *usableProvider;
+@property(nonatomic, strong) NSArray *provider;
 
 @end

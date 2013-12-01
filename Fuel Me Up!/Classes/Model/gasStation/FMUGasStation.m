@@ -23,8 +23,7 @@
 + (NSDictionary *)JSONKeyPathsByPropertyKey
 {
     return @{
-        @"location"       : @"coordinate",
-        @"usableProvider" : @"provider"
+        @"location" : @"coordinate"
     };
 }
 
@@ -33,24 +32,9 @@
     return [NSValueTransformer mtl_JSONDictionaryTransformerWithModelClass:[FMULocation class]];
 }
 
-+ (NSValueTransformer *)usableProviderTransformer
++ (NSValueTransformer *)usableProviderTransformer __unused
 {
     return [NSValueTransformer mtl_JSONArrayTransformerWithModelClass:[NSString class]];
-}
-
-
-#pragma mark - setter
-- (void)setUsableProvider:(NSArray *)usableProvider
-{
-    _usableProvider = usableProvider;
-
-    NSString *availableProvider = @"";
-    for ( NSString *provider in _usableProvider )
-    {
-        availableProvider = [availableProvider stringByAppendingString:[NSString stringWithFormat:@" %@", provider]];
-    }
-
-    _availableProviderString = availableProvider;
 }
 
 

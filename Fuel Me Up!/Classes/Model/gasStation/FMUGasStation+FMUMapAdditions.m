@@ -17,7 +17,7 @@
 
 - (NSString *)subtitle
 {
-    return _availableProviderString;
+    return [self.provider componentsJoinedByString:@", "];
 }
 
 - (CLLocationCoordinate2D)coordinate
