@@ -8,12 +8,15 @@
 
 @import MapKit;
 
+#import <CoreLocation/CoreLocation.h>
+
 #import "FMUMapViewController.h"
 #import "FMURequestHandler.h"
 #import "FMUFilterViewController.h"
 #import "FMUMapFilter.h"
-#import "FMUVehicle.h"
 #import "FMUMapFilter+FMUPersistence.h"
+#import "FMUVehicle.h"
+#import "FMUVehicle+FMUMapAdditions.h"
 #import "FMUGasStation.h"
 #import "FMUGasStation+FMUMapAdditions.h"
 #import "FMULocation.h"
@@ -30,6 +33,7 @@
     MKMapView *_mapView;
     NSArray *_vehicles;
     NSArray *_gasStations;
+    MKUserLocation *_initialLocation;
 }
 
 - (id)init
@@ -96,6 +100,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
     [self fetchVehiclesWithFilter:_mapFilter];
     [self fetchGasStationsWithFilter:_mapFilter];
 }
@@ -199,6 +204,17 @@ calloutAccessoryControlTapped:(UIControl *)control
     }
 }
 
+- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
+{
+    if ( _initialLocation == nil )
+    {
+        _initialLocation = userLocation;
+        [_mapView setRegion:MKCoordinateRegionMakeWithDistance(userLocation.coordinate, userLocation.location.horizontalAccuracy + 250, userLocation.location.horizontalAccuracy + 250)
+                   animated:YES];
+    }
+}
+
+
 #pragma mark - Actions
 
 - (void)locateMe:(id)sender
@@ -225,6 +241,20 @@ calloutAccessoryControlTapped:(UIControl *)control
                          }
 
                          _vehicles = vehicles;
+                         if ( _vehicles.count > 0 )
+                         {
+                             FMUVehicle *nearestVehicle =
+                                 ( FMUVehicle * ) [self nearestAnnotationToLocation:_mapView.userLocation.location
+                                                                        annotations:_vehicles];
+
+                             MKCoordinateSpan coordinateSpan = MKCoordinateSpanMake(
+                                 2.5 * (fabs(_mapView.userLocation.coordinate.latitude - nearestVehicle.location.coordinate.latitude)),
+                                 2.5 * (fabs(_mapView.userLocation.coordinate.longitude - nearestVehicle.location.coordinate.longitude))
+                             );
+                             [_mapView setRegion:MKCoordinateRegionMake(_mapView.userLocation.coordinate, coordinateSpan)
+                                        animated:YES];
+                         }
+
                          [_mapView addAnnotations:_vehicles];
                      });
                  }];
@@ -251,6 +281,29 @@ calloutAccessoryControlTapped:(UIControl *)control
                             });
                         }];
     }
+}
+
+
+- (id <MKAnnotation>)nearestAnnotationToLocation:(CLLocation *)location annotations:(NSArray *)annotations
+{
+    // Nearest vehicle to user
+    __block id <MKAnnotation> nearestAnnotation = nil;
+    __block CLLocationDistance minimumDistance = -1;
+    [annotations enumerateObjectsUsingBlock:^(id <MKAnnotation> annotation, NSUInteger index, BOOL *stop)
+    {
+        CLLocation *annotationLocation = [[CLLocation alloc]
+            initWithLatitude:annotation.coordinate.latitude
+                   longitude:annotation.coordinate.longitude];
+        CLLocationDistance distance = [annotationLocation distanceFromLocation:location];
+
+        if ( minimumDistance == -1 || distance < minimumDistance )
+        {
+            minimumDistance = distance;
+            nearestAnnotation = annotation;
+        }
+    }];
+
+    return nearestAnnotation;
 }
 
 @end
