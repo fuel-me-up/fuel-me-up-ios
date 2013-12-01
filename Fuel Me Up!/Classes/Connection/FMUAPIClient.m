@@ -21,9 +21,14 @@
 
     dispatch_once(&onceToken, ^
     {
+        NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+        [configuration setHTTPAdditionalHeaders:@{
+            @"Accept" : @"application/json; encoding='utf-8'"
+        }];
+
         NSURL *URL = [NSURL URLWithString:FMUHTTPBackendURL];
-        instance = [[FMUAPIClient alloc] initWithBaseURL:URL];
-    }) ;
+        instance = [[FMUAPIClient alloc] initWithBaseURL:URL sessionConfiguration:configuration];
+    });
 
     return instance;
 }
