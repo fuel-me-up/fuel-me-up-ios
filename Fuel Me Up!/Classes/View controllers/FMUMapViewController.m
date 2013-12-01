@@ -173,7 +173,7 @@ calloutAccessoryControlTapped:(UIControl *)control
 {
     if ( [view.annotation isKindOfClass:[FMUGasStation class]] )
     {
-        FMUGasStation *gastStation = view.annotation;
+        FMUGasStation *gastStation = (FMUGasStation *)view.annotation;
 
         MKPlacemark *startPlace = [[MKPlacemark alloc]
             initWithCoordinate:CLLocationCoordinate2DMake(gastStation.location.latitude, gastStation.location.longitude)
@@ -191,7 +191,7 @@ calloutAccessoryControlTapped:(UIControl *)control
     }
     else if ( [view.annotation isKindOfClass:[FMUVehicle class]] )
     {
-        FMUVehicle *vehicle = view.annotation;
+        FMUVehicle *vehicle = (FMUVehicle *)view.annotation;
         if ( [vehicle.provider isEqualToString:@"car2go"] )
         {
             NSURL *url = [NSURL URLWithString:@"//car2go:"];

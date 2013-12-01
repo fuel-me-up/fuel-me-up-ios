@@ -38,16 +38,14 @@
       maximumFuelLevel:(NSUInteger)maximumFuelLevel
             completion:(void (^)(NSArray *vehicles, NSError *error))completion
 {
-    NSURLSessionDataTask *operation =
-        [_requestBuilder vehiclesInCity:city maximumFuelLevel:maximumFuelLevel completion:completion];
+	[_requestBuilder vehiclesInCity:city maximumFuelLevel:maximumFuelLevel completion:completion];
 }
 
 - (void)gasStationsInCity:(NSString *)city
                  provider:(NSArray *)provider
                completion:(void (^)(NSArray *gasStations, NSError *error))completion
 {
-    NSURLSessionDataTask *operation =
-        [_requestBuilder gasStationsInCity:city provider:provider completion:completion];
+	[_requestBuilder gasStationsInCity:city provider:provider completion:completion];
 }
 
 

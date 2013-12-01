@@ -16,7 +16,7 @@
 
 - (NSString *)subtitle
 {
-    return [NSString stringWithFormat:@"%d%% fuel, %@", self.fuelLevel, self.provider];
+    return [NSString stringWithFormat:@"%lu%% fuel, %@", (unsigned long)self.fuelLevel, self.provider];
 }
 
 - (CLLocationCoordinate2D)coordinate

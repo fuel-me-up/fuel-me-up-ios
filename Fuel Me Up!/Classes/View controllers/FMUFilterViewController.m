@@ -56,7 +56,7 @@
     CGFloat padding = 18.f;
     _maximumFuelLabel = [[UILabel alloc] initWithFrame:CGRectMake(padding, 100.f, 55.f, 24.f)];
     [FMUStyle styleFMUFilterLabel:_maximumFuelLabel];
-    _maximumFuelLabel.text = [NSString stringWithFormat:@"%d %%", _mapFilter.maximumFuelLevel];
+    _maximumFuelLabel.text = [NSString stringWithFormat:@"%lu %%", (unsigned long)_mapFilter.maximumFuelLevel];
     [self.view addSubview:_maximumFuelLabel];
 
     _maximumFuelSlider = [[UISlider alloc]
